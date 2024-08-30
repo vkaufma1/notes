@@ -1,0 +1,191 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Code written by Jessica Barnett */
+/* CUSTOM STYLES */
+:root{
+    --red: #bf3636;
+    --orange: #d04936;
+    --yellow: #ffcc14;
+    --green: #5a5a23;
+    --blue: #303464;
+      --lighter-blue: #414686;
+    --pink: #fe4b7a;
+    --purple: #741a60;
+    --brown: #40130e;
+    --light-gray: #eaeaea;
+    --med-gray: #555;
+    --dark-gray: #222;
+      font-size: 16px;
+  }
+  
+  body{
+    background-color: var(--light-gray);
+    font-family: Montserrat, sans-serif;
+    line-height: 1.3;
+  }
+  
+  header, footer{
+      padding: 2rem;
+      background-color: var(--blue);
+      color: white;
+  }
+  
+  header{
+    box-shadow: 3px 3px 3px #aaa;
+  }
+  
+  footer{
+    box-shadow: -3px -3px 3px #aaa;
+  }
+  
+  main{
+    width: calc(100% - 2rem);
+    max-width: 1200px;
+    margin: 2rem auto;
+      padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1rem;
+  }
+  
+  h1{
+    font-size: 2rem;
+  }
+  
+  h1, h2, h3{
+    text-align: center;
+    margin: 0.25rem 0;
+    font-weight: bold;
+  }
+  /* 
+  h2{
+      grid-column: 1/-1;
+    font-size: 1.4rem;
+      background-color: white;
+      padding: 1rem;
+    box-shadow: 5px 5px 5px #aaa;
+  } */
+  
+  h3{
+      font-size: 1.2rem;
+  }
+  
+  .sr-only {
+      position: absolute;
+      left: -10000px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+  }
+  
+  section{
+    width: calc(100% - 2rem);
+    min-height: 300px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 5px 5px 5px #aaa;
+    padding: 1rem;
+  }
+  
+  a{
+      display: block;
+      font-size: 1.1rem;
+      padding: 0.75rem;
+      margin: 1rem 0;
+      background-color: var(--blue);
+      color: white;
+      text-decoration: none;
+    box-shadow: 3px 3px 6px var(--med-gray);
+  }
+  
+  a:hover{
+      background-color: var(--lighter-blue);
+      box-shadow: 6px 6px 10px var(--med-gray);
+  }
+  
+  .span{
+      grid-column: 1/-1;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-column-gap: 1rem;
+      width: calc(100% - 2rem);
+      max-width: calc(1200px - 4rem);
+  }
+  
+  .span h3{
+      grid-column: 1/-1;
+  }
+  
+  .span a{
+      margin: 0.5rem 0;
+  }
+  
+  p{
+    padding: 1em;
+    font-size: 1.1em;
+  }
+  
+  footer a{
+      display: inline;
+      box-shadow: none;
+      background-color: var(--blue);
+  }
+  
+  footer a:hover{
+      text-decoration: underline;
+      box-shadow: none;
+  }
+  
+  @media screen and (min-width: 964px){
+      .span{
+          grid-column: 2/-1;
+      }
+  }
